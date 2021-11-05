@@ -1,5 +1,1 @@
-void test();
-
-namespace lib {
-int add(int a, int b);
-}
+#include "lib/sort/merge.h"
