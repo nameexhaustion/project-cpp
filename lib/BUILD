@@ -8,5 +8,7 @@ cc_library(
         "//main:__pkg__",
         "//test:__pkg__",
     ],
-    deps = ["//lib/sort"],
+    deps = [
+        "//lib/sort",
+    ],
 )
