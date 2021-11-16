@@ -1,15 +1,12 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
 cc_library(
-    name = "lib",
-    srcs = ["lib.cc"],
-    hdrs = ["lib.h"],
+    name = "dsa",
+    srcs = [],
+    hdrs = ["slist.h"],
     visibility = [
+        "//lib:__pkg__",
         "//main:__pkg__",
         "//test:__pkg__",
-    ],
-    deps = [
-        "//lib/sort",
-        "//lib/dsa"
     ],
 )

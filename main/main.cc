@@ -1,10 +1,19 @@
+#include <cstdint>
 #include <iostream>
-#include <vector>
 
 #include "lib/lib.h"
 
 int main() {
-  std::vector<uint32_t> a{5, 4, 3, 2, 1};
-  lib::sort::mergesort(&a);
+  lib::dsa::slist::List<std::uint32_t> l;
+  l.push(23);
+  l.push(42);
+  l.push(999);
+  l.push(1);
+  l.push(0);
+  l.push(3227);
+
+  for (auto n = l.head; n != nullptr; n = n->next) {
+    std::cout << n->data << "\n";
+  }
   return 0;
 }
